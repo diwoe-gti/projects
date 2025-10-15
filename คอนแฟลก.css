@@ -403,27 +403,14 @@ body {
     margin: 5px 0;
     font-size: 1.1em;
 }
-/*
-  This code tells the browser:
-  "When the screen width is 768 pixels or less (typical tablet size or smaller),
-  make the boxes stack one on top of the other, or display in one single column."
-*/
 
 @media (max-width: 768px) {
-    /* Assuming your container class is something like 'stats-container' */
     .stats-container {
-        /*
-          Flexbox: Change direction to column so they stack vertically.
-          (If you are using CSS Grid, you would adjust the grid-template-columns property.)
-        */
         flex-direction: column; 
-        /* Optional: Add space between the boxes when they stack */
         gap: 20px; 
     }
-    
-    /* Optional: If the boxes are still too wide, you might set a width for each box */
     .stat-box { 
-        width: 100%; /* Make each box take the full width */
+        width: 100%;
     }
 }
 footer {
